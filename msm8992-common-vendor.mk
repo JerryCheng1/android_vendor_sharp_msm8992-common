@@ -17,250 +17,394 @@
 
 # ADSP
 PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so
-
-# DRM
-PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/bin/dpmd:system/bin/dpmd \
-	  vendor/sharp/msm8992-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
-	  vendor/sharp/msm8992-common/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
-	  vendor/sharp/msm8992-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
-	  vendor/sharp/msm8992-common/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdpmctmgr.so:system/vendor/lib64/libdpmctmgr.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdpmfdmgr.so:system/vendor/lib64/libdpmfdmgr.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdpmnsrm.so:system/vendor/lib64/libdpmnsrm.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so
-
-# Qseecomm
-PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/bin/qseecomd:system/bin/qseecomd \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/hw/keystore.msm8992.so:system/vendor/lib/hw/keystore.msm8992.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/hw/keystore.msm8992.so:system/vendor/lib64/hw/keystore.msm8992.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
-	  vendor/sharp/msm8992-common/proprietary/lib/libjni_resource_drm.so:system/lib/libjni_resource_drm.so \
-	  vendor/sharp/msm8992-common/proprietary/lib64/libjni_resource_drm.so:system/lib64/libjni_resource_drm.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so
-
-# GPS
-PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
-	  vendor/sharp/msm8992-common/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
-	  vendor/sharp/msm8992-common/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
-	  vendor/sharp/msm8992-common/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
-	  vendor/sharp/msm8992-common/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
-	  vendor/sharp/msm8992-common/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
-	  vendor/sharp/msm8992-common/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-	  vendor/sharp/msm8992-common/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
-	  vendor/sharp/msm8992-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-	  vendor/sharp/msm8992-common/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
-	  vendor/sharp/msm8992-common/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-	  vendor/sharp/msm8992-common/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so
-
-# Graphics
-PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/hw/vulkan.msm8992.so:system/vendor/lib/hw/vulkan.msm8992.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/hw/vulkan.msm8992.so:system/vendor/lib64/hw/vulkan.msm8992.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libscale.so:system/vendor/lib64/libscale.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libuiblur.so:system/vendor/lib64/libuiblur.so \
-	  vendor/sharp/msm8992-common/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
-	  vendor/sharp/msm8992-common/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw
-
-# IPA
-PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/bin/ipacm-diag:system/bin/ipacm-diag
+    vendor/sharp/msm8992-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/rfsa/adsp/fastrpc_shell_0:system/vendor/lib/rfsa/adsp/fastrpc_shell_0 \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:system/vendor/lib/rfsa/adsp/libadsp_fd_skel.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so
 
 # AUDIO
 PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/hw/sound_trigger.primary.msm8992.so:system/vendor/lib/hw/sound_trigger.primary.msm8992.so \
-	  vendor/sharp/msm8992-common/proprietary/etc/acdbdata/SH/Bluetooth_cal.acdb:system/etc/acdbdata/SH/Bluetooth_cal.acdb \
-	  vendor/sharp/msm8992-common/proprietary/etc/acdbdata/SH/General_cal.acdb:system/etc/acdbdata/SH/General_cal.acdb \
-	  vendor/sharp/msm8992-common/proprietary/etc/acdbdata/SH/Global_cal.acdb:system/etc/acdbdata/SH/Global_cal.acdb \
-	  vendor/sharp/msm8992-common/proprietary/etc/acdbdata/SH/Handset_cal.acdb:system/etc/acdbdata/SH/Handset_cal.acdb \
-	  vendor/sharp/msm8992-common/proprietary/etc/acdbdata/SH/Hdmi_cal.acdb:system/etc/acdbdata/SH/Hdmi_cal.acdb \
-	  vendor/sharp/msm8992-common/proprietary/etc/acdbdata/SH/Headset_cal.acdb:system/etc/acdbdata/SH/Headset_cal.acdb \
-	  vendor/sharp/msm8992-common/proprietary/etc/acdbdata/SH/Speaker_cal.acdb:system/etc/acdbdata/SH/Speaker_cal.acdb \
-	  vendor/sharp/msm8992-common/proprietary/etc/aanc_tuning_mixer.txt:system/etc/aanc_tuning_mixer.txt \
-	  vendor/sharp/msm8992-common/proprietary/etc/surround_sound/filter1i.pcm:system/etc/surround_sound/filter1i.pcm \
-	  vendor/sharp/msm8992-common/proprietary/etc/surround_sound/filter1r.pcm:system/etc/surround_sound/filter1r.pcm \
-	  vendor/sharp/msm8992-common/proprietary/etc/surround_sound/filter2i.pcm:system/etc/surround_sound/filter2i.pcm \
-	  vendor/sharp/msm8992-common/proprietary/etc/surround_sound/filter2r.pcm:system/etc/surround_sound/filter2r.pcm \
-	  vendor/sharp/msm8992-common/proprietary/etc/surround_sound/filter3i.pcm:system/etc/surround_sound/filter3i.pcm \
-	  vendor/sharp/msm8992-common/proprietary/etc/surround_sound/filter3r.pcm:system/etc/surround_sound/filter3r.pcm \
-	  vendor/sharp/msm8992-common/proprietary/etc/surround_sound/filter4i.pcm:system/etc/surround_sound/filter4i.pcm \
-	  vendor/sharp/msm8992-common/proprietary/etc/surround_sound/filter4r.pcm:system/etc/surround_sound/filter4r.pcm \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so
+    vendor/sharp/msm8992-common/proprietary/etc/drc/drc_cfg_AZ.txt:system/etc/drc/drc_cfg_AZ.txt \
+    vendor/sharp/msm8992-common/proprietary/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg:system/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/hw/sound_trigger.primary.msm8992.so:system/vendor/lib/hw/sound_trigger.primary.msm8992.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdrc.so:system/vendor/lib/libdrc.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libsurround_3mic_proc.so:system/vendor/lib/libsurround_3mic_proc.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so
+
+# Qseecomm
+PRODUCT_COPY_FILES += \
+    vendor/sharp/msm8992-common/proprietary/bin/qseecomd:system/bin/qseecomd \
+    vendor/sharp/msm8992-common/proprietary/vendor/bin/fidodaemon:system/vendor/bin/fidodaemon \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/hw/keystore.msm8992.so:system/vendor/lib/hw/keystore.msm8992.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/hw/keystore.msm8992.so:system/vendor/lib64/hw/keystore.msm8992.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so
+
+# GPS
+PRODUCT_COPY_FILES += \
+    vendor/sharp/msm8992-common/proprietary/bin/garden_app:system/bin/garden_app \
+    vendor/sharp/msm8992-common/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
+    vendor/sharp/msm8992-common/proprietary/bin/loc_launcher:system/bin/loc_launcher \
+    vendor/sharp/msm8992-common/proprietary/bin/lowi-server:system/bin/lowi-server \
+    vendor/sharp/msm8992-common/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
+    vendor/sharp/msm8992-common/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
+    vendor/sharp/msm8992-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
+    vendor/sharp/msm8992-common/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
+    vendor/sharp/msm8992-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/sharp/msm8992-common/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
+    vendor/sharp/msm8992-common/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
+    vendor/sharp/msm8992-common/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
+    vendor/sharp/msm8992-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    vendor/sharp/msm8992-common/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
+    vendor/sharp/msm8992-common/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+    vendor/sharp/msm8992-common/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    vendor/sharp/msm8992-common/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
+    vendor/sharp/msm8992-common/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
+    vendor/sharp/msm8992-common/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
+    vendor/sharp/msm8992-common/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
+    vendor/sharp/msm8992-common/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
+    vendor/sharp/msm8992-common/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libasn1cper.so:system/vendor/lib/libasn1cper.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libasn1crt.so:system/vendor/lib/libasn1crt.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libasn1crtx.so:system/vendor/lib/libasn1crtx.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libgdtap.so:system/vendor/lib/libgdtap.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/liblowi_wifihal.so:system/vendor/lib/liblowi_wifihal.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/liblowi_wifihal_nl.so:system/vendor/lib/liblowi_wifihal_nl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libasn1cper.so:system/vendor/lib64/libasn1cper.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libasn1crt.so:system/vendor/lib64/libasn1crt.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libasn1crtx.so:system/vendor/lib64/libasn1crtx.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libgdtap.so:system/vendor/lib64/libgdtap.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libloc_ext.so:system/vendor/lib64/libloc_ext.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so
+
+# Graphics
+PRODUCT_COPY_FILES += \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/hw/vulkan.msm8992.so:system/vendor/lib/hw/vulkan.msm8992.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/hw/vulkan.msm8992.so:system/vendor/lib64/hw/vulkan.msm8992.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libscale.so:system/vendor/lib64/libscale.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libuiblur.so:system/vendor/lib64/libuiblur.so \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw
+
+# DPM
+PRODUCT_COPY_FILES += \
+    vendor/sharp/msm8992-common/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/sharp/msm8992-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
+    vendor/sharp/msm8992-common/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
+    vendor/sharp/msm8992-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
+    vendor/sharp/msm8992-common/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdpmctmgr.so:system/vendor/lib64/libdpmctmgr.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdpmfdmgr.so:system/vendor/lib64/libdpmfdmgr.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdpmnsrm.so:system/vendor/lib64/libdpmnsrm.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so
 
 # Media
 PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libFileMux.so:system/vendor/lib/libFileMux.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libOmxMux.so:system/vendor/lib/libOmxMux.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libFileMux.so:system/vendor/lib64/libFileMux.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libI420colorconvert.so:system/vendor/lib64/libI420colorconvert.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:system/vendor/lib64/libOmxAmrwbplusDec.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libOmxMux.so:system/vendor/lib64/libOmxMux.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libOmxWmaDec.so:system/vendor/lib64/libOmxWmaDec.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libmmosal.so:system/vendor/lib64/libmmosal.so
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libFileMux.so:system/vendor/lib/libFileMux.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libOmxMux.so:system/vendor/lib/libOmxMux.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libFileMux.so:system/vendor/lib64/libFileMux.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libI420colorconvert.so:system/vendor/lib64/libI420colorconvert.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:system/vendor/lib64/libOmxAmrwbplusDec.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libOmxMux.so:system/vendor/lib64/libOmxMux.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libOmxWmaDec.so:system/vendor/lib64/libOmxWmaDec.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libmmosal.so:system/vendor/lib64/libmmosal.so
 
 # Media firmware
 PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
-	  vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
-	  vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
-	  vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03 \
-	  vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
-	  vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
-	  vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03 \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
 
 # Peripheral manager
 PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/bin/pm-proxy:system/bin/pm-proxy \
-	  vendor/sharp/msm8992-common/proprietary/bin/pm-service:system/bin/pm-service \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so
-
-# QMI
+    vendor/sharp/msm8992-common/proprietary/bin/pm-proxy:system/bin/pm-proxy \
+    vendor/sharp/msm8992-common/proprietary/bin/pm-service:system/bin/pm-service \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so
+    
+# Post processing
 PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/bin/irsc_util:system/bin/irsc_util \
-	  vendor/sharp/msm8992-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_cci.so:system/vendor/lib64/libqmi_cci.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_client_helper.so:system/vendor/lib64/libqmi_client_helper.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_client_qmux.so:system/vendor/lib64/libqmi_client_qmux.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_common_so.so:system/vendor/lib64/libqmi_common_so.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_csi.so:system/vendor/lib64/libqmi_csi.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_csvt_srvc.so:system/vendor/lib64/libqmi_csvt_srvc.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_encdec.so:system/vendor/lib64/libqmi_encdec.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmiservices.so:system/vendor/lib64/libqmiservices.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so
+    vendor/sharp/msm8992-common/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libmm-abl-oem.so:system/vendor/lib64/libmm-abl-oem.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libmm-abl.so:system/vendor/lib64/libmm-abl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libmm-als.so:system/vendor/lib64/libmm-als.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so
+
+# Qualcomm framework
+PRODUCT_COPY_FILES += \
+    vendor/sharp/msm8992-common/proprietary/bin/irsc_util:system/bin/irsc_util \
+    vendor/sharp/msm8992-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_cci.so:system/vendor/lib64/libqmi_cci.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_client_helper.so:system/vendor/lib64/libqmi_client_helper.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_client_qmux.so:system/vendor/lib64/libqmi_client_qmux.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_common_so.so:system/vendor/lib64/libqmi_common_so.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_csi.so:system/vendor/lib64/libqmi_csi.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmi_encdec.so:system/vendor/lib64/libqmi_encdec.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqmiservices.so:system/vendor/lib64/libqmiservices.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so
+    
+# CNE
+PRODUCT_COPY_FILES += \
+    vendor/sharp/msm8992-common/proprietary/bin/cnd:system/bin/cnd \
+    vendor/sharp/msm8992-common/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
+    vendor/sharp/msm8992-common/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
+    vendor/sharp/msm8992-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/sharp/msm8992-common/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so
+    
+# IMS
+PRODUCT_COPY_FILES += \
+    vendor/sharp/msm8992-common/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
+    vendor/sharp/msm8992-common/proprietary/bin/imscmservice:system/bin/imscmservice \
+    vendor/sharp/msm8992-common/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
+    vendor/sharp/msm8992-common/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-imsrcscm.so:system/vendor/lib/lib-imsrcscm.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-imsrcscmclient.so:system/vendor/lib/lib-imsrcscmclient.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-imsrcscmservice.so:system/vendor/lib/lib-imsrcscmservice.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-imss.so:system/vendor/lib/lib-imss.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-imsvt.so:system/vendor/lib/lib-imsvt.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libimscamera_jni.so:system/vendor/lib/libimscamera_jni.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libimsmedia_jni.so:system/vendor/lib/libimsmedia_jni.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/librcc.so:system/vendor/lib/librcc.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-imsrcs.so:system/vendor/lib64/lib-imsrcs.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib64/lib-imss.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib64/lib-rcsimssjni.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-rcsjni.so:system/vendor/lib64/lib-rcsjni.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so
 
 # Radio
 PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/vendor/bin/qti:system/vendor/bin/qti \
-	  vendor/sharp/msm8992-common/proprietary/bin/netmgrd:system/bin/netmgrd \
-	  vendor/sharp/msm8992-common/proprietary/bin/qmuxd:system/bin/qmuxd \
-	  vendor/sharp/msm8992-common/proprietary/bin/radish:system/bin/radish \
-	  vendor/sharp/msm8992-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-	  vendor/sharp/msm8992-common/proprietary/bin/rfs_access:system/bin/rfs_access \
-	  vendor/sharp/msm8992-common/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
-	  vendor/sharp/msm8992-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
-	  vendor/sharp/msm8992-common/proprietary/lib/libbattlog.so:system/lib/libbattlog.so \
-	  vendor/sharp/msm8992-common/proprietary/lib64/libbattlog.so:system/lib64/libbattlog.so
+    vendor/sharp/msm8992-common/proprietary/bin/diag_mdlog:system/bin/diag_mdlog \
+    vendor/sharp/msm8992-common/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
+    vendor/sharp/msm8992-common/proprietary/bin/irsc_util:system/bin/irsc_util \
+    vendor/sharp/msm8992-common/proprietary/bin/netmgrd:system/bin/netmgrd \
+    vendor/sharp/msm8992-common/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/sharp/msm8992-common/proprietary/bin/radish:system/bin/radish \
+    vendor/sharp/msm8992-common/proprietary/bin/rfs_access:system/bin/rfs_access \
+    vendor/sharp/msm8992-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/sharp/msm8992-common/proprietary/bin/tftp_server:system/bin/tftp_server \
+    vendor/sharp/msm8992-common/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
+    vendor/sharp/msm8992-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/sharp/msm8992-common/proprietary/vendor/bin/qti:system/vendor/bin/qti \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqcmaputils.so:system/vendor/lib/libqcmaputils.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:system/vendor/lib/libril-qc-ltedirectdisc.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libril-qc-radioconfig.so:system/vendor/lib/libril-qc-radioconfig.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/librilqmiservices.so:system/vendor/lib/librilqmiservices.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libsettings.so:system/vendor/lib/libsettings.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:system/vendor/lib64/libril-qc-ltedirectdisc.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/librilqmiservices.so:system/vendor/lib64/librilqmiservices.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
+    vendor/sharp/msm8992-common/proprietary/lib/libbattlog.so:system/lib/libbattlog.so \
+    vendor/sharp/msm8992-common/proprietary/lib64/libbattlog.so:system/lib64/libbattlog.so
 
 # Sensors
 #PRODUCT_COPY_FILES += \
@@ -268,50 +412,73 @@ PRODUCT_COPY_FILES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/bin/energy-awareness:system/bin/energy-awareness \
-	  vendor/sharp/msm8992-common/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
-	  vendor/sharp/msm8992-common/proprietary/etc/thermal-engine-8992.conf:system/etc/thermal-engine-8992.conf \
-	  vendor/sharp/msm8992-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
-	  vendor/sharp/msm8992-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
-	  vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
-	  vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
-	  vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
-	  vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
-	  vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
-	  vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
-	  vendor/sharp/msm8992-common/proprietary/vendor/etc/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqti-at.so:system/vendor/lib/libqti-at.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqti-gt.so:system/vendor/lib/libqti-gt.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqti-at.so:system/vendor/lib64/libqti-at.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqti-gt.so:system/vendor/lib64/libqti-gt.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so
+    vendor/sharp/msm8992-common/proprietary/bin/energy-awareness:system/bin/energy-awareness \
+    vendor/sharp/msm8992-common/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
+    vendor/sharp/msm8992-common/proprietary/etc/thermal-engine-8992.conf:system/etc/thermal-engine-8992.conf \
+    vendor/sharp/msm8992-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+    vendor/sharp/msm8992-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
+    vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
+    vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
+    vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
+    vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
+    vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqti-at.so:system/vendor/lib/libqti-at.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqti-gt.so:system/vendor/lib/libqti-gt.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqti-at.so:system/vendor/lib64/libqti-at.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqti-gt.so:system/vendor/lib64/libqti-gt.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so
 
 # Wifi
 PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/bin/cnss_diag:system/bin/cnss_diag \
-	  vendor/sharp/msm8992-common/proprietary/bin/cnss-daemon:system/bin/cnss-daemon
+    vendor/sharp/msm8992-common/proprietary/bin/cnss_diag:system/bin/cnss_diag \
+    vendor/sharp/msm8992-common/proprietary/bin/cnss-daemon:system/bin/cnss-daemon
 
 # Widevine
 PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+    vendor/sharp/msm8992-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 # Time services
 PRODUCT_COPY_FILES += \
-	  vendor/sharp/msm8992-common/proprietary/bin/time_daemon:system/bin/time_daemon
+    vendor/sharp/msm8992-common/proprietary/bin/time_daemon:system/bin/time_daemon
+    
+# Firmware
+PRODUCT_COPY_FILES += \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/nvm_tlv.bin:system/etc/firmware/nvm_tlv.bin \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/nvm_tlv_2.1.bin:system/etc/firmware/nvm_tlv_2.1.bin \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/nvm_tlv_3.0.bin:system/etc/firmware/nvm_tlv_3.0.bin \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/nvm_tlv_3.2.bin:system/etc/firmware/nvm_tlv_3.2.bin \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/rampatch_tlv.img:system/etc/firmware/rampatch_tlv.img \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/rampatch_tlv_1.3.tlv:system/etc/firmware/rampatch_tlv_1.3.tlv \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/rampatch_tlv_2.1.tlv:system/etc/firmware/rampatch_tlv_2.1.tlv \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
+    vendor/sharp/msm8992-common/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv
 
 PRODUCT_PACKAGES += \
-	   libTimeService \
-	   libtime_genoff \
-	   TimeService \
-	   QTIDiagServices \
-	   datastatusnotification \
-	   fastdormancy \
-	   shutdownlistener \
-	   com.qti.dpmframework \
-	   dpmapi \
-	   qcrilhook \
-	   qcrilmsgtunnel
+    libTimeService \
+    libtime_genoff \
+    QtiTelephonyService \
+    TimeService \
+    datastatusnotification \
+    fastdormancy \
+    shutdownlistener \
+    CNEService \
+    com.qualcomm.location \
+    ims \
+    imssettings \
+    cneapiclient \
+    com.qti.dpmframework \
+    com.qti.location.sdk \
+    com.qualcomm.location.vzw_library \
+    com.quicinc.cne \
+    dpmapi \
+    izat.xt.srv \
+    qcrilhook \
+    qcnvitems \
+    qti-telephony-common \
+    qcrilmsgtunnel
