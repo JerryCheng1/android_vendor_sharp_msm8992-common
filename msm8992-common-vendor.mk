@@ -267,6 +267,7 @@ PRODUCT_COPY_FILES += \
 # Post processing
 PRODUCT_COPY_FILES += \
     vendor/sharp/msm8992-common/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
+    vendor/sharp/msm8992-common/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
     vendor/sharp/msm8992-common/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/sharp/msm8992-common/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     vendor/sharp/msm8992-common/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
@@ -442,6 +443,8 @@ PRODUCT_COPY_FILES += \
     vendor/sharp/msm8992-common/proprietary/etc/thermal-engine-8992.conf:system/etc/thermal-engine-8992.conf \
     vendor/sharp/msm8992-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/sharp/msm8992-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/sharp/msm8992-common/proprietary/lib/libshdisp.so:system/lib/libshdisp.so \
+    vendor/sharp/msm8992-common/proprietary/lib64/libshdisp.so:system/lib64/libshdisp.so \
     vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
     vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
     vendor/sharp/msm8992-common/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
