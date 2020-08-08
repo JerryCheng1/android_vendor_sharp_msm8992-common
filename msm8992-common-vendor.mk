@@ -509,4 +509,5 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     qcnvitems \
     qti-telephony-common \
+    QtiTelephonyServicelibrary \
     qcrilmsgtunnel
